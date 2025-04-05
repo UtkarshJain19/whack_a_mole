@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url("images/mario-bg.jpg");
+    background-size: cover;
+}
+
+#board {
+    width: 540px;
+    height: 540px;
+    background: url("images/soil.png");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board div {
+    /* Board is 540px and dividing in 3*3 gives 180px */
+    width: 180px;
+    height: 180px;
+    background-image: url("images/pipe.png");
+    background-size: cover;
+}
+
+/* Every img tag in the board div */
+#board div img {
+    /* Giving each mole height and width */
+    width: 100px;
+    height: 100px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
